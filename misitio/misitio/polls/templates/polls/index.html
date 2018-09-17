@@ -1,0 +1,61 @@
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+
+
+ <p>  
+
+<head>
+
+<title>Ejemplo 01 del curso HTML - aprenderaprogramar.com</title>
+
+</head>
+
+<body text="blue" bgcolor="silver">
+
+<pre>
+
+Ejemplo básico: uso de etiquetas de formato y atributos básicos para la etiqueta body.
+
+<strong>negrita</strong>
+
+<em>Cursiva</em>
+
+<del>Subrayado</del>
+
+<big>Grande</big>
+
+<small>pequeño</small>
+
+Esto es un<sub>subíndice</sub>
+
+Y esto un<sup>superíndice</sup>
+
+<div class="eq-c">
+C + O<sub>2</sub> <span class="dblarrow">&rarr;</span> CO<sub>2</sub>
+</div>
+
+<div class="eq-c">
+<i>c</i>(NaOH) = 
+<div class="fraction">
+<span class="fup"><i>n</i>(NaOH)</span>
+<span class="bar">/</span>
+<span class="fdn"><i>V</i>(NaOH)</span>
+</div>
+= 1.2345 mol dm<sup>-3</sup>
+</div>
+
+
+</div>
+
+
+</pre>
+
+</body>
+.</p>
+
+{% endif %}
